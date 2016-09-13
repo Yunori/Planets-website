@@ -1,0 +1,404 @@
+/* Structures and polices */
+
+body {
+    background-color: grey;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    position: relative;
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height:850px;
+}
+
+footer {
+    position: relative;
+    width: 1080px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 45px;
+    border: 1px solid black;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+@font-face {
+    font-family: 'my_slogan';
+    src: url("../ressources/dimis.ttf");
+}
+
+/* Header */
+
+header {
+    background-image: url("../images/hbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    position: relative;
+    margin-top: -8px;
+    height: 200px;
+}
+
+header img {
+    margin-top: 25px;
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    position: absolute;
+    display: inline-block;
+    top: 35px;
+    left: 200px;
+    height: 150px;
+    
+    font-variant:small-caps;
+    color: white;
+    font-size:42px;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    line-height:1;
+}
+
+header .slogan {
+    position: absolute;
+    display: inline-block;
+    left: 465px;
+    top: 125px;
+
+    font-size:22px;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    font-style:oblique;
+    font-variant:small-caps;
+    color: white;
+}
+
+header .connection {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    right: 140px;
+    top: 0px;
+    background-color: white;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    opacity: 0.8;
+}
+
+.connection:hover {
+    padding-top: 15px;
+    height: 45px;
+    color: red;
+}
+
+header .panier {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+.panier:hover {
+    padding-top: 15px;
+    height: 45px;
+    color: red;
+}
+
+/* menu & menu deroulant */
+
+nav {
+    position: relative;
+    background-color: white;
+    width: 99.85%;
+    height: 40px;
+    border: 1px solid black;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+nav a {
+        color: black;
+}
+
+nav a:hover {
+        color: red;
+}
+
+nav li {
+  top: -16px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 120px;
+}
+
+nav li li {
+  border: 1px solid black;
+  background-color: white;
+  display: block;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  left: -1px;
+  margin-top: 26px;
+  /*margin: 10px;*/
+  padding: 0px;
+  z-index: 1;
+}
+
+nav li:hover .n2 {
+  display: block;
+}
+
+/* SearchBar*/
+
+#searchbar{
+  margin-top: -62px;
+  margin-left: 850px;
+  position:relative;
+  width:290px;
+}
+
+.formulaire .champ {
+   display: inline-block;
+   height: 15px; 
+   width: 220px;
+}
+
+.search {
+  width: 160px;
+  height: 30px;
+  padding: 0;
+}
+
+/* Slider */
+
+.slider {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 680px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+}
+
+.slider img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Blocs */
+
+.facebook {
+    top: 260px;
+    background-image: url("../images/fb.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 90px;
+}
+
+.twitter {
+    top: 460px;
+    background-image: url("../images/twitter.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 90px;
+}
+
+.partenaires {
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+    top: 660px;
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.partenaires marquee {
+    margin-top: 5px;
+    width: 180px;
+    height: 170px;
+    text-align: center;
+}
+
+.panier2 {
+    top: 260px;
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.support {
+    top: 580px;
+    background-image: url("../images/support.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* blocs produits */
+
+#bctitre {
+    position: relative;
+    width: 660px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#bctitre h1 {
+    text-align: center;
+    color: black;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+}
+
+#sec {
+    padding: 10px;
+    position: relative;
+    width: 660px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#sec h1 {
+    text-align: center;
+    color: black;
+    font-family: my_slogan, georgia, trebuchet MS, sans-serif;
+}
+
+#sec form {
+    text-align: center;
+}
+
+#bc {
+    position: relative;
+    display: inline-block;
+    width: 326px;
+    height: 240px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#bc:hover {
+    z-index: 2;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+#bc p {
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#sec img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#bc img {
+    margin-top: 10px;
+    margin-left: 80px;
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+#sec h3 {
+    text-align: center;
+}
+
+#sec p {
+    text-align: center;
+}
+
+/* Tableaux connection */
+
+td {
+    width: 30%;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 25px;
+	text-align: center;
+	color: black;
+	padding-bottom: 10px;
+}
+
+table table td {
+    width: 400px;
+    border: 0px solid white;
+}
